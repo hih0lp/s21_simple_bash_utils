@@ -21,8 +21,8 @@ typedef struct Flags {
   // int o;
 } Flags;
 int not_flags(Flags* f);
-void read_flags(char* optstring, int argc, char** argv, char* finding_patterns,
-                Flags* flags);
+int read_flags(char* optstring, int argc, char** argv, char* finding_patterns,
+               Flags* flags);
 void write_all(int argc, char** argv, char* finding_patterns, Flags* flags);
 
 #endif
